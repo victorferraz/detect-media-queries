@@ -1,0 +1,41 @@
+{
+  "name": "break-shot-cli",
+  "bin": {
+    "break-shot": "./bin/break-shot-cli"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./bin/break-shot",
+    "test": "ava --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "Q": "0.0.1",
+    "cheerio": "^0.20.0",
+    "lodash": "^4.13.1",
+    "mensch": "^0.3.1",
+    "minimist": "^1.2.0",
+    "request": "^2.72.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2"
+  },
+  "ava": {
+    "files": [
+      "tests/*.js",
+      "!tests/mock/*.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "tap": true,
+    "powerAssert": false,
+    "require": [
+      "babel-register"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const cli = require('../lib/cli');
+const args = cli.parse(process.argv.slice(2));
+
+process.on('exit', code => {
+  if (!code) process.exit(cli.exitCode);
+});
+
+cli.run(args);
