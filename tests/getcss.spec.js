@@ -2,7 +2,7 @@
 import test from 'ava';
 
 const htmlObject = require('./mock/mockhtml.json');
-const getCss = require('../lib/break-shot/getcss');
+const getCss = require('../lib/getcss');
 const html = new getCss().getStyles(htmlObject);
 const _ = require('lodash');
 

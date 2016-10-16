@@ -1,7 +1,7 @@
 'use strict';
 import test from 'ava';
 const cssObject = require('./mock/mockcss.json');
-const Parse =  require('../lib/break-shot/parse');
+const Parse =  require('../lib/parse');
 const getcss = new Parse().toJson(cssObject);
 
 test('number of sizes', t => {

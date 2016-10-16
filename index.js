@@ -1,15 +1,14 @@
 'use strict';
 
-const readUrl = require('./readurl');
+const readUrl = require('./lib/readurl');
 const Q = require('q');
-const getCss = require('./getcss');
-const readCss = require('./readcss');
-const parse = require ('./parse');
-var fs = require('fs');
+const getCss = require('./lib/getcss');
+const readCss = require('./lib/readcss');
+const parse = require ('./lib/parse');
 
 class BreakShotCli {
-  getMedia (args, cb) {
-    let readHtml = new readUrl('http://rccomunicacao.com.br/');
+  getMedia (url, cb) {
+    let readHtml = new readUrl(url);
     let deferred = Q.defer();
     deferred.resolve(readHtml);
     deferred.promise
