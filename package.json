@@ -1,8 +1,5 @@
 {
-  "name": "break-shot-cli",
-  "bin": {
-    "break-shot": "./bin/break-shot-cli"
-  },
+  "name": "detect-media-queries",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,6 +15,7 @@
     "lodash": "^4.13.1",
     "mensch": "^0.3.1",
     "minimist": "^1.2.0",
+    "q": "^1.4.1",
     "request": "^2.72.0"
   },
   "devDependencies": {

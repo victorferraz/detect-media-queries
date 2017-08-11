@@ -7,7 +7,7 @@ const readCss = require('./lib/readcss');
 const parse = require ('./lib/parse');
 
 class BreakShotCli {
-  getMedia (url, cb, error) {
+  getMedia (url, error) {
     let readHtml = new readUrl(url);
     let deferred = Q.defer();
     deferred.resolve(readHtml);
